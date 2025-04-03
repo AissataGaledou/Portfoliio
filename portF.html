@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aissata Galedou - Web Developer, Drone Creator, and Computer Science Student Portfolio">
+    <link rel="stylesheet" href="portF.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Aissata Galedou | Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Aissata</h1>
+            </div>
+            <nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1 class="animate-text">Hello</h1>
+                <h2 class="animate-text delay-1">I'm Aissata</h2>
+                <p class="animate-text delay-2">Web Developer | Drone Creator | Designer</p>
+                <div class="cta-buttons animate-text delay-3">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="section-container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm Aissata Galedou, a computer science student at the Accra Institute of Technology. With expertise in drone creation, web development, graphic design, and leadership, I'm passionate about leveraging technology to address real-world challenges and contribute to impactful projects.</p>
+                        
+                        <div class="skills">
+                            <h3>My Skills</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">HTML/CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Responsive Design</span>
+                                <span class="skill-tag">UI/UX Design</span>
+                                <span class="skill-tag">Drone Technology</span>
+                                <span class="skill-tag">Graphic Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-frame">
+                            <!-- Replace with your actual headshot -->
+                            <img src="https://via.placeholder.com/400x500" alt="Aissata Galedou" class="profile-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="section-container">
+                <h2 class="section-title">Projects</h2>
+                
+                <div class="project-category">
+                    <h3 class="category-title">Web Development</h3>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="weather.jpg" alt="Weather App">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" aria-label="View live project"><i class="fas fa-external-link-alt"></i></a>
+                                        <a href="#" class="project-link" aria-label="View source code"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>Weather Application</h4>
+                                <p>Real-time weather data with location search and forecast visualization.</p>
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">API</span>
+                                </div>
+                                <a href="http://127.0.0.1:5501/weather.html" class="view-project">View Project</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="calculator.jpg" alt="Calculator App">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" aria-label="View live project"><i class="fas fa-external-link-alt"></i></a>
+                                        <a href="#" class="project-link" aria-label="View source code"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>Calculator Application</h4>
+                                <p>Interactive calculator with standard and scientific functions.</p>
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <a href="http://127.0.0.1:5501/index.html" class="view-project">View Project</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="form.jpg" alt="Form">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" aria-label="View live project"><i class="fas fa-external-link-alt"></i></a>
+                                        <a href="#" class="project-link" aria-label="View source code"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>Simple Form</h4>
+                                <p>User-friendly form with validation and responsive design.</p>
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <a href="http://127.0.0.1:5504/form.html" class="view-project">View Project</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="todo.jpg" alt="To-Do App">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" aria-label="View live project"><i class="fas fa-external-link-alt"></i></a>
+                                        <a href="#" class="project-link" aria-label="View source code"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>To-Do Application</h4>
+                                <p>Task management app with drag-and-drop functionality and local storage.</p>
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <a href="http://127.0.0.1:5503/index.html" class="view-project">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-category">
+                    <h3 class="category-title">AI Projects</h3>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="Firefly song.jpg" alt="AI Song">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" aria-label="Listen to song"><i class="fas fa-music"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>AI Music Generation</h4>
+                                <p>Creating original music using machine learning models.</p>
+                                <div class="project-tags">
+                                    <span class="tag">AI</span>
+                                    <span class="tag">Music</span>
+                                </div>
+                                <a href="https://www.udio.com/songs/4qgSs98kFSi83o8Rtaxjn3" class="view-project">Listen Now</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="food.jpg" alt="AI Food Image">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" aria-label="View project"><i class="fas fa-external-link-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>Food Recognition AI</h4>
+                                <p>Machine learning model that identifies and categorizes food items from images.</p>
+                                <div class="project-tags">
+                                    <span class="tag">AI</span>
+                                    <span class="tag">Computer Vision</span>
+                                </div>
+                                <a href="model.html" class="view-project">View Project</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="infographic.jpg" alt="AI Infographic">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" aria-label="View infographic"><i class="fas fa-chart-bar"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>Data Visualization Infographic</h4>
+                                <p>Interactive visualization of job salary data across industries.</p>
+                                <div class="project-tags">
+                                    <span class="tag">Data</span>
+                                    <span class="tag">Visualization</span>
+                                </div>
+                                <a href="https://infogram.com/average-salaries-per-job-title-1h0r6rzzwjykl4e?live" class="view-project">View Infographic</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p><a href="mailto:aissatagaledou@gmail.com">aissatagaledou@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Accra, Ghana</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="Twitter profile"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Aissata</h3>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aissata Galedou. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
