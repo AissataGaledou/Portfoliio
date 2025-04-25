@@ -2,39 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="Style.css">
-  <title>Calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator App</title>
 </head>
 <body>
- 
-<div id="Calculator">
-  <input id="display" readonly>
-  <div id="keys">
-    <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
-    <button onclick="appendToDisplay('7')"class="operator-btn">7</button>
-    <button onclick="appendToDisplay('8')" class="operator-btn">8</button>
-    <button onclick="appendToDisplay('9')" class="operator-btn">9</button>
-    <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
-    <button onclick="appendToDisplay('4')" class="operator-btn">4</button>
-    <button onclick="appendToDisplay('5')" class="operator-btn">5</button>
-    <button onclick="appendToDisplay('6')" class="operator-btn">6</button>
-    <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
-    <button onclick="appendToDisplay('1')" class="operator-btn">1</button>
-    <button onclick="appendToDisplay('2')" class="operator-btn">2</button>
-    <button onclick="appendToDisplay('3')" class="operator-btn">3</button>
-    <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
-    <button onclick="appendToDisplay('0')" class="operator-btn">0</button>
-    <button onclick="appendToDisplay('.')" class="operator-btn">.</button>
-    <button onclick="calculate()" class="operator-btn">=</button>
-    <button onclick="clearDisplay()" class="operator-btn">C</button>
+  <div id="calculator">
+    <div id="display-container">
+      <input id="display" readonly>
+    </div>
+    <div id="keys">
+      <button data-type="operator" data-value="*">×</button>
+      <button data-type="number" data-value="7">7</button>
+      <button data-type="number" data-value="8">8</button>
+      <button data-type="number" data-value="9">9</button>
+      <button data-type="operator" data-value="/">÷</button>
+      <button data-type="number" data-value="4">4</button>
+      <button data-type="number" data-value="5">5</button>
+      <button data-type="number" data-value="6">6</button>
+      <button data-type="operator" data-value="-">−</button>
+      <button data-type="number" data-value="1">1</button>
+      <button data-type="number" data-value="2">2</button>
+      <button data-type="number" data-value="3">3</button>
+      <button data-type="operator" data-value="+">+</button>
+      <button data-type="number" data-value="0">0</button>
+      <button data-type="decimal" data-value=".">.</button>
+      <button data-type="equals" data-value="=">=</button>
+      <button data-type="clear" data-value="clear">C</button>
+    </div>
   </div>
-</div>
-
   <script src="calculator.js"></script>
-
-  
 </body>
 </html>
