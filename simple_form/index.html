@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact form</title>
+
+  <style>
+    :root {
+      --primary-color: #74b3ce;
+      --primary-dark: #5a9cb8;
+      --text-color: #333;
+      --background-color: #f5f5dc; /* beige */
+      --success-color: #4caf50;
+      --form-padding: 20px;
+      --border-radius: 4px;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Karla', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: var(--text-color);
+      font-weight: bold;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    
+    /* Form styles */
+    .form-container {
+      background-color: white;
+      padding: var(--form-padding);
+      border-radius: var(--border-radius);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-row {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-control {
+      flex: 1;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: var(--border-radius);
+      font-family: inherit;
+      font-size: 16px;
+    }
+    
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+    
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 2px rgba(116, 179, 206, 0.2);
+    }
+    
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .checkbox-group input {
+      width: auto;
+    }
+    
+    .btn {
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: var(--border-radius);
+      transition: background-color 0.3s;
+    }
+    
+    .btn:hover {
+      background-color: var(--primary-dark);
+    }
+    
+    .success-message {
+      display: none;
+      background-color: var(--success-color);
+      color: white;
+      padding: 15px;
+      border-radius: var(--border-radius);
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    @media (max-width: 768px) {
+      .form-row {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+    }
+    
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Contact Us</h1>
+    
+    <div class="form-container">
+      <form id="contactForm" method="post" action="">
+        <div class="form-row">
+          <div class="form-control">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Enter your first name" required>
+          </div>
+          
+          <div class="form-control">
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Enter your last name" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="queryType">Query Type</label>
+          <select name="queryType" id="queryType" required>
+            <option value="">Please select an option</option>
+            <option value="General Enquiry">General Enquiry</option>
+            <option value="Support Request">Support Request</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" placeholder="Enter your message here" required></textarea>
+        </div>
+        
+        <div class="form-group checkbox-group">
+          <input type="checkbox" name="consent" id="consent">
+          <label for="consent">I consent to being contacted by the team</label>
+        </div>
+        
+        <div class="form-group">
+          <button type="submit" class="btn">Submit</button>
+        </div>
+      </form>
+    </div>
+    
+    <div id="successMessage" class="success-message">
+      Thanks for completing the form. We'll be in touch soon!
+    </div>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('contactForm');
+      const successMessage = document.getElementById('successMessage');
+      
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+       
+        if (form.checkValidity()) {
+          form.style.display = 'none';
+          successMessage.style.display = 'block';
+          
+        } else {
+          
+          form.reportValidity();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
